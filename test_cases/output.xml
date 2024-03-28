@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.14 on win32)" generated="2024-03-28T17:46:53.004560" rpa="false" schemaversion="5">
+<suite id="s1" name="AuthorizationTestCases" source="C:\Users\leysan\Desktop\robot_framework_saucedemo\test_cases\AuthorizationTestCases.robot">
+<test id="s1-t1" name="Open browser" line="7">
+<kw name="Open Website" owner="Authorization">
+<msg time="2024-03-28T17:46:53.205949" level="INFO">Opening website: https://www.saucedemo.com/v1/</msg>
+<msg time="2024-03-28T17:46:53.953284" level="INFO">${response} = 200</msg>
+<var>${response}</var>
+<arg>url=${URL}</arg>
+<status status="PASS" start="2024-03-28T17:46:53.205949" elapsed="0.747335"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${response}</arg>
+<arg>${200}</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-03-28T17:46:53.953284" elapsed="0.000000"/>
+</kw>
+<doc>Проверка открытия ссылки</doc>
+<tag>check:positive</tag>
+<status status="PASS" start="2024-03-28T17:46:53.204849" elapsed="0.761532"/>
+</test>
+<status status="PASS" start="2024-03-28T17:46:53.004560" elapsed="0.966911"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">check:positive</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="AuthorizationTestCases">AuthorizationTestCases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
