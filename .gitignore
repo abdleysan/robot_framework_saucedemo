@@ -1,3 +1,6 @@
+test1/
+test_post_request.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -37,6 +40,9 @@ pip-log.txt
 pip-delete-this-directory.txt
 
 # Unit test / coverage reports
+log.html
+output.xml
+report.html
 htmlcov/
 .tox/
 .nox/
