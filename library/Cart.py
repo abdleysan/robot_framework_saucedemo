@@ -21,3 +21,15 @@ class Cart:
             return True
         else:
             return False 
+        
+    def buy_item(self, url):
+        params = {'first-name': 'test', 'last-name': 'test', 'postal-code': 'test'}
+        requests.post(url, params=params)
+        url_checkout = 'https://www.saucedemo.com/v1/checkout-step-two.html'
+        requests.get(url_checkout)
+        driver = webdriver.Chrome()
+        driver.get(url_checkout)
+        driver.find_element(By.CSS_SELECTOR,'#checkout_summary_container > div > div.summary_info > div.cart_footer > a.btn_action.cart_button').click()
+        return requests.get('https://www.saucedemo.com/v1/checkout-complete.html').status_code
+        
+            
